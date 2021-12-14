@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.center{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #6c5d5d;
+}
+
+#coloBox{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 12px;
+    background: #d9d9d9;
+}
+
+.style{
+    width: 146px;
+    text-align: center;
+    padding: 28px;
+    margin: 12px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    cursor:pointer;
+}
+
+button{
+    border: none;
+    padding: 12px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #a3a0a0;
+    color:white;
+}
+
+.green{
+    background-color: rgb(57, 204, 130);
+    color: white;
+}
+
+.red{
+    background-color: rgb(218, 69, 64);
+    color: white;
+}
+
+.blue{
+    background-color: rgb(93, 85, 212);
+    color: white;
+}
+
+.pink{
+    background-color: rgb(212, 115, 172);
+    color: white;
+}
+
+.orange{
+    background-color: rgb(212, 188, 48);
+    color: white;
+}
+
+#style:hover {
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+
+  span {
+    position: relative;
+    font-family:fantasy;
+    font-size: 15px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: -webkit-gradient(linear, left top, right top, from(rgb(247, 247, 247)), color-stop(#fff), to(rgb(161, 54, 54)));
+    background: -o-linear-gradient(left, rgb(247, 247, 247), #fff, rgb(161, 54, 54));
+    background: linear-gradient(90deg, rgb(247, 247, 247), #fff, rgb(161, 54, 54));
+    background-repeat:space;
+    background-size: 70%;
+    -webkit-animation: animate 3s linear infinite;
+            animation: animate 3s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(223, 223, 223, 0);
+  }
+  
+  @-webkit-keyframes animate {
+    0% {
+      background-position: -300%;
+    }
+    100% {
+      background-position: 300%;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -300%;
+    }
+    100% {
+      background-position: 300%;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hidden {
+      display:none;
+    }
+  }
